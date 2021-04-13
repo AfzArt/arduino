@@ -3,8 +3,9 @@
  * If you intend to use the code a reference to the channel will be great :)
  * 
  * The below code is a beginner project using the Node MCU with Wifi ESP8266 development board
+ * It works with the built-in LED on the ESP8266. No more components are required for this project
  * 
- * Also subscribe to Afz Art for more fun stuff
+ * Subscribe to Afz Art for more fun stuff
  * http://youtube.com/c/AfzArt
 */
 
@@ -27,13 +28,13 @@ ESP8266WebServer server(80);
 const int led = LED_BUILTIN;
 
 void handleRoot() {
-  String message = "<html><head></head><body style='font-size: 12px'>Following functions are available:<br><br>";
-  message += "<a href='/led?s=0'>LED ON</a> Switches on the ON-BOARD LED<br>";
-  message += "<a href='/led?s=1'>LED OFF</a> Switches off the ON-BOARD LED<br>";
-  message += "<a href='/led?s=2'>Blink</a> Makes the LED blink<br>";
-  message += "<a href='/led?s=3'>Faster</a> Makes the LED blinks faster<br>";
-  message += "<br/><br/>Version 0.6<br>";
-  server.send(200, "text/html", message);
+  String str = "<html><head></head><body style='font-size: 12px'>Following functions are available:<br><br>";
+  str += "<a href='/led?s=0'>LED ON</a> Switches on the ON-BOARD LED<br>";
+  str += "<a href='/led?s=1'>LED OFF</a> Switches off the ON-BOARD LED<br>";
+  str += "<a href='/led?s=2'>Blink</a> Makes the LED blink<br>";
+  str += "<a href='/led?s=3'>Faster</a> Makes the LED blinks faster<br>";
+  str += "<br/><br/>Version 0.6<br>";
+  server.send(200, "text/html", str);
 }
 
 void handleNotFound() {
