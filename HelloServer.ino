@@ -1,3 +1,13 @@
+/*
+ * Hello! This is Afz Art!! Please feel free to use the code below!
+ * If you intend to use the code a reference to the channel will be great :)
+ * 
+ * The below code is a beginner project using the Node MCU with Wifi ESP8266 development board
+ * 
+ * Also subscribe to Afz Art for more fun stuff
+ * http://youtube.com/c/AfzArt
+*/
+
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
