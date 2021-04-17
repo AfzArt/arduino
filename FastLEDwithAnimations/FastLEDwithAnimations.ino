@@ -1,3 +1,11 @@
+/*
+ * Hello! This is Afz Art!! Please feel free to use the code below!
+ * If you intend to use the code a reference to the channel will be great :)
+ * 
+ * Subscribe to Afz Art for more fun stuff
+ * http://youtube.com/c/AfzArt
+*/
+
 #include <FastLED.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
